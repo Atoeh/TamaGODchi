@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TamaGODchi.ThirstPage">
+    <StackLayout>
+        <Grid RowDefinitions="3">
+            <ImageButton Source="{Binding Image1, Mode=OneWay}" Clicked="Button1_Clicked" Grid.Row="1"/>
+            <ImageButton Source="{Binding Image2, Mode=OneWay}" Clicked="Button2_Clicked" Grid.Row="2"/>
+            <ImageButton Source="{Binding Image3, Mode=OneWay}" Clicked="Button3_Clicked" Grid.Row="3"/>
+        </Grid>
+    </StackLayout>
+
+
+
+</ContentPage>

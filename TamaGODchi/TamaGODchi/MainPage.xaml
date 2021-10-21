@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TamaGODchi.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="10">
+            <Label Text="Tamagotchi: Jesus Christ" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+        </Frame>
+        
+        <Frame BackgroundColor="#2196F3" Padding="5" CornerRadius="10">
+            <Label Text="{Binding StateText, Mode=OneWay}" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+        </Frame>
+        
+        <Frame BackgroundColor="#2196F3" Padding="5" CornerRadius="10">
+            <Label Text="{Binding AgeText, Mode=OneWay}" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+        </Frame>
+        
+        <Image Source="ChristNotDoingOk.jpg"/>
+
+        <Button Text="{Binding Total, Mode=OneWay}" Clicked="AgeButton_Clicked"/>
+        
+        <Grid ColumnDefinitions="3" RowDefinitions="2, Auto, *" VerticalOptions="End" HorizontalOptions="Center">
+            <Button Text="Hunger" Grid.Row="1" Grid.Column="1" Clicked="HungerButton_Clicked"/>
+            <Button Text="Thirst" Grid.Row="1" Grid.Column="2" Clicked="ThirstButton_Clicked"/>
+            <Button Text="Boredom" Grid.Row="1" Grid.Column="3" Clicked="BoredomButton_Clicked" />
+            <Button Text="Loneliness" Grid.Row="2" Grid.Column="1" Clicked="LonelyButton_Clicked"/>
+            <Button Text="Stimulation" Grid.Row="2" Grid.Column="2" Clicked="StimulButton_Clicked"/>
+            <Button Text="Sleep" Grid.Row="2" Grid.Column="3" />
+        </Grid>
+        
+    </StackLayout>
+
+
+    
+</ContentPage>
